@@ -8,11 +8,12 @@ while getopts "ctnh" opt; do
         c) compact=true ;;
         t) time_only=true ;;
         n) name_only=true ;;
-        *) echo "Usage: $0 [-c] [-t] [-n]" >&2
+        *) echo "whatson - Fetch what's on Criterion 24/7" >&2
+           echo "Usage: $0 [-c] [-t] [-n]" >&2
            echo "  -c  Compact output (one line)" >&2
            echo "  -t  Time only" >&2
            echo "  -n  Name only" >&2
-           echo "  -h  Help" >&2
+           echo "  -h  Help [you are here]" >&2
            exit 1 ;;
     esac
 done
